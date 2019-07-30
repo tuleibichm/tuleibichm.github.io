@@ -153,8 +153,10 @@
           <div class="modal__title">Please top up your balance to proceed</div>
           <label>Account Balance:	$15.00</label>
           <form>
-            <input class="field" type="text" placeholder="200" id="sum" name="sum">
-            <button class="button" id="sendPay">Add funds</button>
+            <div class="modal__boxInside">
+              <input class="field" type="text" placeholder="200" id="sum" name="sum">
+              <button class="button" id="sendPay">Add funds</button>
+            </div>
           </form>
         </div>
       </div>
@@ -239,6 +241,135 @@
               <div class="modal__btnGroup">
                 <button class="button">Send Mail</button><span class="totalCost">Video date cost: 150$</span>
                 <div></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modalSendGift" style="display: none;">
+        <div class="modal__box"><span class="close"></span>
+          <div class="modal__title">SEND A GIFT</div>
+          <form>
+            <div class="modal__boxInside">
+              <p>Choose the gift you want to send to <Name></p>
+              <div class="gifts">
+                <div class="gifts__item"><img src="static/images/media/gift-1.png">
+                  <div class="gifts__description">
+                    <p><strong>Passionate Red Roses</strong></p>
+                    <p>Red roses on long stems — what will describe your feelings better? This bouquet is laconic but elegant. It is appropriate in any situation! The minimum amount is 3 roses. Choose the uneven amount only. (because of local cultural nuances)</p>
+                  </div>
+                  <div class="gifts__cost"><b>7$</b>
+                    <button class="button">Send</button>
+                  </div>
+                </div>
+                <div class="gifts__item"><img src="static/images/media/gift-1.png">
+                  <div class="gifts__description">
+                    <p><strong>Passionate Red Roses</strong></p>
+                    <p>Red roses on long stems — what will describe your feelings better? This bouquet is laconic but elegant. It is appropriate in any situation! The minimum amount is 3 roses. Choose the uneven amount only. (because of local cultural nuances)</p>
+                  </div>
+                  <div class="gifts__cost"><b>7$</b>
+                    <button class="button">Send</button>
+                  </div>
+                </div>
+                <div class="gifts__item"><img src="static/images/media/gift-1.png">
+                  <div class="gifts__description">
+                    <p><strong>Passionate Red Roses</strong></p>
+                    <p>Red roses on long stems — what will describe your feelings better? This bouquet is laconic but elegant. It is appropriate in any situation! The minimum amount is 3 roses. Choose the uneven amount only. (because of local cultural nuances)</p>
+                  </div>
+                  <div class="gifts__cost"><b>7$</b>
+                    <button class="button">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modalAdditionalOptions" style="display: none;">
+        <div class="modal__box"><span class="close"></span>
+          <div class="modal__title">Additional options</div>
+          <form>
+            <div class="modal__boxInside">
+              <p>Select additional options</p>
+              <div class="gifts">
+                <div class="gifts__item"><img src="static/images/media/gift-1.png">
+                  <div class="gifts__description">
+                    <p><strong>Passionate Red Roses</strong></p>
+                    <p>Red roses on long stems — what will describe your feelings better? This bouquet is laconic but elegant. It is appropriate in any situation! The minimum amount is 3 roses. Choose the uneven amount only. (because of local cultural nuances)</p>
+                  </div>
+                  <div class="gifts__cost"><b>7$</b></div>
+                </div>
+                <div class="checkbox__label">
+                  <label for="addMessage">Add message to your gift</label>
+                  <input class="checkbox" type="checkbox" id="addMessage" placeholder="Subject">
+                  <textarea class="fieldTextarea"></textarea>
+                </div>
+                <div class="checkbox__label">
+                  <label for="selectDay">Sellect specific day when we delver your present to lady</label>
+                  <input class="checkbox" type="checkbox" id="selectDay" placeholder="Subject">
+                  <div class="dateTimePicker">
+                    <div class="datepicker"></div>
+                    <div class="timepicker"></div>
+                  </div>
+                </div>
+                <div class="checkbox__label">
+                  <label for="addVideo">Video of lady at delivery  -  29 USD</label>
+                  <input class="checkbox" type="checkbox" id="addVideo" placeholder="Subject">
+                </div>
+              </div>
+              <div class="modal__btnGroup modal__btnGroup-absolute">
+                <button class="button">Continue</button><span class="totalCost">Total cost: 20$</span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modalConfirmAction" style="display: none;">
+        <div class="modal__box"><span class="close"></span>
+          <div class="modal__title">Confirm actions</div>
+          <form>
+            <div class="modal__boxInside">
+              <p>Get access to video for $4</p>
+              <div class="video paused">
+                <div class="video__view">
+                  <video>
+                    <source src="/static/video/big_buck_bunny.mp4" type="video/mp4">
+                  </video>
+                  <div class="video__controlls"></div>
+                </div>
+              </div>
+              <div class="modal__btnGroup">
+                <button class="button">OK</button>
+                <button class="button button-transparent">Cancel</button>
+                <div></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modalBookaCall" style="display: none;">
+        <div class="modal__box"><span class="close"></span>
+          <div class="modal__title">Book a Call</div>
+          <form>
+            <div class="modal__boxInside">
+              <input class="field" type="text" placeholder="Name">
+              <input class="field" type="text" placeholder="Phone or Skype">
+              <p>Your time zone</p>
+              <p class="text-gray">All times will be displayed according to your time zone</p>
+              <label class="filter__label" for="">
+                <select class="field" id="" name="">
+                  <option value="1">Ukraine</option>
+                  <option value="2">USA</option>
+                </select>
+              </label>
+              <label class="filter__label" for="">
+                <select class="field" id="" name="">
+                  <option value="1">Kiev (GMT+3:00) [DST]</option>
+                  <option value="2">New York (GMT+3:00) [DST]</option>
+                </select>
+              </label>
+              <div class="modal__btnGroup">
+                <button class="button">Continue</button>
               </div>
             </div>
           </form>

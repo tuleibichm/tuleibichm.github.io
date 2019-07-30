@@ -83,7 +83,7 @@
                   <input class="field" type="number" placeholder="Age" id="regForm-age" name="age">
                   <input class="field" type="email" placeholder="Email" id="regForm-email" name="email">
                   <input class="field" type="password" placeholder="Password" id="regForm-password" name="password">
-                  <button class="button">Sign up for free</button>
+                  <button class="button">How it works</button>
                 </div>
               </form>
             </div>
@@ -222,12 +222,10 @@
         </section>
         <section>
           <div class="container">
-            <div class="section__text">
-              <div class="forMoreText" style="height:220px;">
-                <h3>OUR HISTORY AND MISSION</h3><br>
-                <p>Adam and Eva matchmaking agency was founded in 2000, those years we operated as traditional dating services agency: Western men and Ukrainian women for marriage corresponded with each other, men could send ladies gifts, and the most important - a man could visit the lady in her City, To communicate with the lady face-to-face and see if the chemistry is there. From the very start we gained reputation of honest and reliable, totally scam-free marriage agency in Ukraine. Since 2006 when IMBRA was implemented, we are fully IMBRA compliant. From the very beginning our mission is to let singles meet and build long-term relationships in modern world. Real life meetings between customers is the base of our business. The most popular service we offer is Individual matchmaking tour to Ukraine, this service is very smartly composed and men do not think of lodging, airport transfers etc, and only concentrate on communication with the lady he is coming to visit.</p><br>
-                <p>As the time goes, the approach in our business operation changed. We are happy to see how many happy couples we made, and the same time we clearly understood that we could do much better, and make more couples. We noticed very clearly that our gentlemen and ladies both lack the assistance of a dating professional, who could train them, explain them the difference between cultures, explain what is needed to make sure the couple will last. We saw that customers need to be guided, otherwise many of them never be able to find a spouse due to unrealistic expectations, non-settled priorities, etc. By 2009 the owner of the agency was already a trained family psychologist and certified international matchmaker. We implemented new approach in work with our clients, personal matchmaking services. By that time, and now, this service is not very well known in comparison to traditional dating services, mainly because it is highly professional, rare and unique bespoke service in dating. But in some countries, like USA or Australia, or United Kingdom, matchmaking services are very popular.</p>
-              </div>
+            <div class="forMoreText" style="height:245px;">
+              <h3>OUR HISTORY AND MISSION</h3><br>
+              <p>Adam and Eva matchmaking agency was founded in 2000, those years we operated as traditional dating services agency: Western men and Ukrainian women for marriage corresponded with each other, men could send ladies gifts, and the most important - a man could visit the lady in her City, To communicate with the lady face-to-face and see if the chemistry is there. From the very start we gained reputation of honest and reliable, totally scam-free marriage agency in Ukraine. Since 2006 when IMBRA was implemented, we are fully IMBRA compliant. From the very beginning our mission is to let singles meet and build long-term relationships in the modern world. Real-life meetings between customers are the base of our business. The most popular service we offer is Individual matchmaking tour to Ukraine, this service is very smartly composed and men do not think of lodging, airport transfers etc., and only concentrate on communication with the lady he is coming to visit.</p>
+              <p>As the time goes, the approach in our business operation changed. We are happy to see how many happy couples we made, and the same time we clearly understood that we could do much better, and make more couples. We noticed very clearly that our gentlemen and ladies both lack the assistance of a dating professional, who could train them, explain them the difference between cultures, explain what is needed to make sure the couple will last. We saw that customers need to be guided, otherwise many of them never be able to find a spouse due to unrealistic expectations, non-settled priorities, etc. By 2009 the owner of the agency was already a trained family psychologist and certified international matchmaker. We implemented new approach in work with our clients, personal matchmaking services. By that time, and now, this service is not very well known in comparison to traditional dating services, mainly because it is highly professional, rare and unique bespoke service in dating. But in some countries, like USA or Australia, or United Kingdom, matchmaking services are very popular.</p>
             </div>
           </div>
         </section>
@@ -238,10 +236,10 @@
           <div class="contacts">
             <div class="contacts__title">Contact us</div>
             <div class="contacts__data">
-              <div><strong>Adress:</strong><a>Street, Odessa, Ukraine</a></div>
-              <div><strong>Phone number:</strong><a>+38 (068) 120-03-00</a></div>
-              <div><strong>E-mail:</strong><a>info@adam-and-eva.com</a></div>
-              <div><strong>Skype:</strong><a>odesa_135</a></div>
+              <div><strong>Adress:</strong><span>Gavannaya Street, Odessa, Ukraine</span></div>
+              <div><strong>Phone number:</strong><span>+38 (068) 120-03-000</span></div>
+              <div><strong>E-mail:</strong><span>info@adam-and-eva.comom</span></div>
+              <div><strong>Skype:</strong><span>odesa_135</span></div>
             </div>
           </div>
         </section>
@@ -301,8 +299,10 @@
           <div class="modal__title">Please top up your balance to proceed</div>
           <label>Account Balance:	$15.00</label>
           <form>
-            <input class="field" type="text" placeholder="200" id="sum" name="sum">
-            <button class="button" id="sendPay">Add funds</button>
+            <div class="modal__boxInside">
+              <input class="field" type="text" placeholder="200" id="sum" name="sum">
+              <button class="button" id="sendPay">Add funds</button>
+            </div>
           </form>
         </div>
       </div>
@@ -387,6 +387,135 @@
               <div class="modal__btnGroup">
                 <button class="button">Send Mail</button><span class="totalCost">Video date cost: 150$</span>
                 <div></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modalSendGift" style="display: none;">
+        <div class="modal__box"><span class="close"></span>
+          <div class="modal__title">SEND A GIFT</div>
+          <form>
+            <div class="modal__boxInside">
+              <p>Choose the gift you want to send to <Name></p>
+              <div class="gifts">
+                <div class="gifts__item"><img src="static/images/media/gift-1.png">
+                  <div class="gifts__description">
+                    <p><strong>Passionate Red Roses</strong></p>
+                    <p>Red roses on long stems — what will describe your feelings better? This bouquet is laconic but elegant. It is appropriate in any situation! The minimum amount is 3 roses. Choose the uneven amount only. (because of local cultural nuances)</p>
+                  </div>
+                  <div class="gifts__cost"><b>7$</b>
+                    <button class="button">Send</button>
+                  </div>
+                </div>
+                <div class="gifts__item"><img src="static/images/media/gift-1.png">
+                  <div class="gifts__description">
+                    <p><strong>Passionate Red Roses</strong></p>
+                    <p>Red roses on long stems — what will describe your feelings better? This bouquet is laconic but elegant. It is appropriate in any situation! The minimum amount is 3 roses. Choose the uneven amount only. (because of local cultural nuances)</p>
+                  </div>
+                  <div class="gifts__cost"><b>7$</b>
+                    <button class="button">Send</button>
+                  </div>
+                </div>
+                <div class="gifts__item"><img src="static/images/media/gift-1.png">
+                  <div class="gifts__description">
+                    <p><strong>Passionate Red Roses</strong></p>
+                    <p>Red roses on long stems — what will describe your feelings better? This bouquet is laconic but elegant. It is appropriate in any situation! The minimum amount is 3 roses. Choose the uneven amount only. (because of local cultural nuances)</p>
+                  </div>
+                  <div class="gifts__cost"><b>7$</b>
+                    <button class="button">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modalAdditionalOptions" style="display: none;">
+        <div class="modal__box"><span class="close"></span>
+          <div class="modal__title">Additional options</div>
+          <form>
+            <div class="modal__boxInside">
+              <p>Select additional options</p>
+              <div class="gifts">
+                <div class="gifts__item"><img src="static/images/media/gift-1.png">
+                  <div class="gifts__description">
+                    <p><strong>Passionate Red Roses</strong></p>
+                    <p>Red roses on long stems — what will describe your feelings better? This bouquet is laconic but elegant. It is appropriate in any situation! The minimum amount is 3 roses. Choose the uneven amount only. (because of local cultural nuances)</p>
+                  </div>
+                  <div class="gifts__cost"><b>7$</b></div>
+                </div>
+                <div class="checkbox__label">
+                  <label for="addMessage">Add message to your gift</label>
+                  <input class="checkbox" type="checkbox" id="addMessage" placeholder="Subject">
+                  <textarea class="fieldTextarea"></textarea>
+                </div>
+                <div class="checkbox__label">
+                  <label for="selectDay">Sellect specific day when we delver your present to lady</label>
+                  <input class="checkbox" type="checkbox" id="selectDay" placeholder="Subject">
+                  <div class="dateTimePicker">
+                    <div class="datepicker"></div>
+                    <div class="timepicker"></div>
+                  </div>
+                </div>
+                <div class="checkbox__label">
+                  <label for="addVideo">Video of lady at delivery  -  29 USD</label>
+                  <input class="checkbox" type="checkbox" id="addVideo" placeholder="Subject">
+                </div>
+              </div>
+              <div class="modal__btnGroup modal__btnGroup-absolute">
+                <button class="button">Continue</button><span class="totalCost">Total cost: 20$</span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modalConfirmAction" style="display: none;">
+        <div class="modal__box"><span class="close"></span>
+          <div class="modal__title">Confirm actions</div>
+          <form>
+            <div class="modal__boxInside">
+              <p>Get access to video for $4</p>
+              <div class="video paused">
+                <div class="video__view">
+                  <video>
+                    <source src="/static/video/big_buck_bunny.mp4" type="video/mp4">
+                  </video>
+                  <div class="video__controlls"></div>
+                </div>
+              </div>
+              <div class="modal__btnGroup">
+                <button class="button">OK</button>
+                <button class="button button-transparent">Cancel</button>
+                <div></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modalBookaCall" style="display: none;">
+        <div class="modal__box"><span class="close"></span>
+          <div class="modal__title">Book a Call</div>
+          <form>
+            <div class="modal__boxInside">
+              <input class="field" type="text" placeholder="Name">
+              <input class="field" type="text" placeholder="Phone or Skype">
+              <p>Your time zone</p>
+              <p class="text-gray">All times will be displayed according to your time zone</p>
+              <label class="filter__label" for="">
+                <select class="field" id="" name="">
+                  <option value="1">Ukraine</option>
+                  <option value="2">USA</option>
+                </select>
+              </label>
+              <label class="filter__label" for="">
+                <select class="field" id="" name="">
+                  <option value="1">Kiev (GMT+3:00) [DST]</option>
+                  <option value="2">New York (GMT+3:00) [DST]</option>
+                </select>
+              </label>
+              <div class="modal__btnGroup">
+                <button class="button">Continue</button>
               </div>
             </div>
           </form>
