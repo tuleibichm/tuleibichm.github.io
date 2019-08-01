@@ -22,10 +22,12 @@
                 </div><a class="navigation__item" href="#">FAQ</a><a class="navigation__item" href="#">About us</a>
               </div>
             </nav>
-            <div class="auth">
+            <div class="auth" style="display: none;">
               <div class="auth__singin"><a href="#">Login</a></div>
               <div class="auth__singup"><a href="#">Sign up</a></div>
-            </div>
+            </div><a class="header__account" href="myProfile.html">
+              <div class="pictures"><img src="static/images/media/man.jpg"></div>
+              <div class="name">My account</div></a>
           </div>
         </div>
       </header>
@@ -38,9 +40,10 @@
                 <div class="filter__box">
                   <div class="filter__fieldGroup"><span>Age:</span>
                     <label class="filter__label">
-                      <div class="ui-fromAge"></div>
-                      <div class="ageSlider" data-min="18" data-max="56"></div>
-                      <div class="ui-toAge"></div>
+                      <div class="ageSlider" data-min="18" data-max="56">
+                        <div class="ui-fromAge"></div>
+                        <div class="ui-toAge"></div>
+                      </div>
                     </label>
                   </div>
                   <div class="filter__fieldGroup"><span>Children:</span>
@@ -68,7 +71,7 @@
                       </select>
                     </label>
                   </div>
-                  <div class="filter__fieldGroup"><span>Search by Name, ID</span>
+                  <div class="filter__fieldGroup filter__fieldGroup-search"><span>Search by Name, ID</span>
                     <label class="filter__label" for="searchField">
                       <input class="field" type="text" id="searchField" name="searchField"><span class="iconSearch"></span>
                     </label>
@@ -92,17 +95,16 @@
                 <div class="candidate__title">Name, City</div>
                 <footer><span>30 y.o</span><span>ID: sn0807</span></footer></a><a class="candidate__item" href="ladiesItem.html"><img src="static/images/media/image8.jpg">
                 <div class="candidate__title">Name, City</div>
-                <footer><span>30 y.o</span><span>ID: sn0807</span></footer></a></div>
-            <div class="button button-white">Show more ladies</div>
+                <footer><span>30 y.o</span><span>ID: sn0807</span></footer></a></div><a class="viewAllButton">Show more ladies</a>
             <div class="pagination">
               <div class="pagination__list"><a class="pagination__item prevArrow prevArrow-disable" href="#"></a><a class="pagination__item" href="#">1</a><a class="pagination__item active" href="#">2</a><a class="pagination__item" href="#">3</a><a class="pagination__item" href="#">4</a><a class="pagination__item" href="#">...</a><a class="pagination__item" href="#">5</a><a class="pagination__item nextArrow" href="#"></a></div>
             </div>
           </div>
         </section>
-        <section class="quickForm" style="background-image: url('static/images/BG_girl_in_blue_dress.jpg');')">
+        <section class="quickForm" style="background-image: url('static/images/quickForm-2.jpg');')">
           <div class="container">
-            <div class="quickForm__title">Take the first step to new relationships now. Get a personal consultation with an expert matchmaker on Skype absolutely free!</div>
-            <p class="quickForm__description">We will gladly help you to choose the best way to search for your second half</p>
+            <div class="quickForm__title">Book an expert call to learn more about our programs! Up to 20% of girls' profiles that are in our database are posted on our website.</div>
+            <p class="quickForm__description">All other profiles are available as part of our matchmaking program and romance tours</p>
             <div class="quickForm__wrapper">
               <form>
                 <div class="quickForm__formBox">
@@ -182,7 +184,7 @@
       <div class="modal modalNotEnoughMoney" style="display: none;">
         <div class="modal__box"><span class="close"></span>
           <div class="modal__title">Please top up your balance to proceed</div>
-          <label>Account Balance:	$15.00</label>
+          <p><b>Account Balance:	$15.00</b></p>
           <form>
             <div class="modal__boxInside">
               <input class="field" type="text" placeholder="200" id="sum" name="sum">
@@ -211,9 +213,10 @@
         <div class="modal__box"><span class="close"></span>
           <div class="modal__title">SELECT OPTIONS</div>
           <form>
-            <div class="modal__boxInside"><span>Please choose the type of letter you want to send</span>
+            <div class="modal__boxInside">
+              <p>Please choose the type of letter you want to send</p>
               <label class="filter__label" for="">
-                <select class="field" id="" name="">
+                <select class="field" id="select-options" name="">
                   <option value="1"><span>1 letter + responce translated for lady *</span><span>10 USD</span></option>
                   <option value="2"><span>1 letter + responce for lady *</span><span>10 USD</span></option>
                 </select>
@@ -241,13 +244,13 @@
               <p>Your time zone</p>
               <p class="text-gray">All times will be displayed according to your time zone</p>
               <label class="filter__label" for="">
-                <select class="field" id="" name="">
+                <select class="field" id="select-city" name="">
                   <option value="1">Ukraine</option>
                   <option value="2">USA</option>
                 </select>
               </label>
               <label class="filter__label" for="">
-                <select class="field" id="" name="">
+                <select class="field" id="select-country" name="">
                   <option value="1">Kiev (GMT+3:00) [DST]</option>
                   <option value="2">New York (GMT+3:00) [DST]</option>
                 </select>
@@ -259,7 +262,7 @@
           </form>
         </div>
       </div>
-      <div class="modal modalArrangeVideoDateCalendar" style="display: none;">
+      <div class="modal modalArrangeVideoDateCalendar">
         <div class="modal__box"><span class="close"></span>
           <div class="modal__title">ARRANGE VIDEO DATE</div>
           <form>
@@ -267,10 +270,34 @@
               <p>Please select a convenient time</p>
               <div class="dateTimePicker">
                 <div class="datepicker"></div>
-                <div class="timepicker"></div>
+                <div class="timepicker">
+                  <div class="timepicker__title">Select time</div>
+                  <div class="timepicker__box">
+                    <input type="radio" id="9:00" name="timepicker">
+                    <label for="9:00">9:00</label>
+                    <input type="radio" id="9:30" name="timepicker">
+                    <label for="9:30">9:30</label>
+                    <input type="radio" id="10:00" name="timepicker">
+                    <label for="10:00">10:00</label>
+                    <input type="radio" id="10:30" name="timepicker">
+                    <label for="10:30">10:30</label>
+                    <input type="radio" id="11:00" name="timepicker">
+                    <label for="11:00">11:00</label>
+                    <input type="radio" id="11:30" name="timepicker">
+                    <label for="11:30">11:30</label>
+                    <input type="radio" id="12:00" name="timepicker">
+                    <label for="12:00">12:00</label>
+                    <input type="radio" id="12:30" name="timepicker">
+                    <label for="12:30">12:30</label>
+                    <input type="radio" id="13:00" name="timepicker">
+                    <label for="13:00">13:00</label>
+                    <input type="radio" id="13:30" name="timepicker">
+                    <label for="13:30">13:30</label>
+                  </div>
+                </div>
               </div>
               <div class="modal__btnGroup">
-                <button class="button">Send Mail</button><span class="totalCost">Video date cost: 150$</span>
+                <button class="button">Continue</button><span class="totalCost">Video date cost: 150$</span>
                 <div></div>
               </div>
             </div>

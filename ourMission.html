@@ -22,10 +22,12 @@
                 </div><a class="navigation__item" href="#">FAQ</a><a class="navigation__item" href="#">About us</a>
               </div>
             </nav>
-            <div class="auth">
+            <div class="auth" style="display: none;">
               <div class="auth__singin"><a href="#">Login</a></div>
               <div class="auth__singup"><a href="#">Sign up</a></div>
-            </div>
+            </div><a class="header__account" href="myProfile.html">
+              <div class="pictures"><img src="static/images/media/man.jpg"></div>
+              <div class="name">My account</div></a>
           </div>
         </div>
       </header>
@@ -114,7 +116,7 @@
       <div class="modal modalNotEnoughMoney" style="display: none;">
         <div class="modal__box"><span class="close"></span>
           <div class="modal__title">Please top up your balance to proceed</div>
-          <label>Account Balance:	$15.00</label>
+          <p><b>Account Balance:	$15.00</b></p>
           <form>
             <div class="modal__boxInside">
               <input class="field" type="text" placeholder="200" id="sum" name="sum">
@@ -143,9 +145,10 @@
         <div class="modal__box"><span class="close"></span>
           <div class="modal__title">SELECT OPTIONS</div>
           <form>
-            <div class="modal__boxInside"><span>Please choose the type of letter you want to send</span>
+            <div class="modal__boxInside">
+              <p>Please choose the type of letter you want to send</p>
               <label class="filter__label" for="">
-                <select class="field" id="" name="">
+                <select class="field" id="select-options" name="">
                   <option value="1"><span>1 letter + responce translated for lady *</span><span>10 USD</span></option>
                   <option value="2"><span>1 letter + responce for lady *</span><span>10 USD</span></option>
                 </select>
@@ -173,13 +176,13 @@
               <p>Your time zone</p>
               <p class="text-gray">All times will be displayed according to your time zone</p>
               <label class="filter__label" for="">
-                <select class="field" id="" name="">
+                <select class="field" id="select-city" name="">
                   <option value="1">Ukraine</option>
                   <option value="2">USA</option>
                 </select>
               </label>
               <label class="filter__label" for="">
-                <select class="field" id="" name="">
+                <select class="field" id="select-country" name="">
                   <option value="1">Kiev (GMT+3:00) [DST]</option>
                   <option value="2">New York (GMT+3:00) [DST]</option>
                 </select>
@@ -191,7 +194,7 @@
           </form>
         </div>
       </div>
-      <div class="modal modalArrangeVideoDateCalendar" style="display: none;">
+      <div class="modal modalArrangeVideoDateCalendar">
         <div class="modal__box"><span class="close"></span>
           <div class="modal__title">ARRANGE VIDEO DATE</div>
           <form>
@@ -199,10 +202,34 @@
               <p>Please select a convenient time</p>
               <div class="dateTimePicker">
                 <div class="datepicker"></div>
-                <div class="timepicker"></div>
+                <div class="timepicker">
+                  <div class="timepicker__title">Select time</div>
+                  <div class="timepicker__box">
+                    <input type="radio" id="9:00" name="timepicker">
+                    <label for="9:00">9:00</label>
+                    <input type="radio" id="9:30" name="timepicker">
+                    <label for="9:30">9:30</label>
+                    <input type="radio" id="10:00" name="timepicker">
+                    <label for="10:00">10:00</label>
+                    <input type="radio" id="10:30" name="timepicker">
+                    <label for="10:30">10:30</label>
+                    <input type="radio" id="11:00" name="timepicker">
+                    <label for="11:00">11:00</label>
+                    <input type="radio" id="11:30" name="timepicker">
+                    <label for="11:30">11:30</label>
+                    <input type="radio" id="12:00" name="timepicker">
+                    <label for="12:00">12:00</label>
+                    <input type="radio" id="12:30" name="timepicker">
+                    <label for="12:30">12:30</label>
+                    <input type="radio" id="13:00" name="timepicker">
+                    <label for="13:00">13:00</label>
+                    <input type="radio" id="13:30" name="timepicker">
+                    <label for="13:30">13:30</label>
+                  </div>
+                </div>
               </div>
               <div class="modal__btnGroup">
-                <button class="button">Send Mail</button><span class="totalCost">Video date cost: 150$</span>
+                <button class="button">Continue</button><span class="totalCost">Video date cost: 150$</span>
                 <div></div>
               </div>
             </div>

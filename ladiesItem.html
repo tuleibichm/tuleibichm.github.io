@@ -22,10 +22,12 @@
                 </div><a class="navigation__item" href="#">FAQ</a><a class="navigation__item" href="#">About us</a>
               </div>
             </nav>
-            <div class="auth">
+            <div class="auth" style="display: none;">
               <div class="auth__singin"><a href="#">Login</a></div>
               <div class="auth__singup"><a href="#">Sign up</a></div>
-            </div>
+            </div><a class="header__account" href="myProfile.html">
+              <div class="pictures"><img src="static/images/media/man.jpg"></div>
+              <div class="name">My account</div></a>
           </div>
         </div>
       </header>
@@ -46,7 +48,15 @@
                   <div class="thumbPhoto__item"><img src="static/images/media/avatar.jpg"></div>
                   <div class="thumbPhoto__item"><img src="static/images/media/avatar.jpg"></div>
                   <div class="thumbPhoto__item"><img src="static/images/media/avatar.jpg"></div>
-                </div><a class="viewAllPhoto" href="#">View all</a>
+                </div><a class="viewAllButton" href="#">View all</a>
+                <div class="video paused">
+                  <div class="video__view">
+                    <video>
+                      <source src="/static/video/big_buck_bunny.mp4" type="video/mp4">
+                    </video>
+                    <div class="button-modalVideo modalOpen" data-modal="modalConfirmAction"></div>
+                  </div>
+                </div>
               </div>
               <div class="candidateProfile__info">
                 <div class="candidateProfile__general">
@@ -73,13 +83,33 @@
                   </div>
                 </div>
                 <div class="candidateProfile__about">
-                  <div class="candidateProfile__aboutText"><strong>About Me</strong>
-                    <p>I am feminine, humorous and kind lady.) My friends say I am very responsible and a great friend. Sometimes I can be serious)). I am a faithful person by nature, and I believe faithfulness is the only possible format of serious relationships. I am many-sided personality and enjoy many things in life. I am an educated person. As a woman I am sensitive, mild and tender. I am a classical woman with traditional family-oriented values, I am here to meet a good man for me and create a family together. I am sincere, kind and honest lady and wish to meet a man with alike qualities and goals.</p><strong>My Dream Man</strong>
-                    <p>My man is life loving person with a good sense of humor. He is wise, noble, attentive and charming. I see my man as a leader, I have a respect for my man. I like when a man knows how to find approach to his lady.) My man is comunicative person and likes to talk to his woman much.) I hope we can have mutual hobbies and raise more things in common together.</p><strong>Hobbies</strong>
-                    <p>Main hobbies- dancing, I do this on a professional basis actually. I am a trainer also. I go to fitness 4 times a week, swimming 2 times a week. Other sports I like are bicycling and roller skating. In the summer I adore beach volleyball and can play the whole day. Ice-skating in the winter. I love to play guitar and do this often. I attend actor's school because I like to express emotions in a beautiful way.)) I think it is so romantic!) I love traveling and want to travel much in the future.</p>
+                  <div class="candidateProfile__aboutText">
+                    <p><b>About Me</b></p>
+                    <p>I am feminine, humorous and kind lady.) My friends say I am very responsible and a great friend. Sometimes I can be serious)). I am a faithful person by nature, and I believe faithfulness is the only possible format of serious relationships. I am many-sided personality and enjoy many things in life. I am an educated person. As a woman I am sensitive, mild and tender. I am a classical woman with traditional family-oriented values, I am here to meet a good man for me and create a family together. I am sincere, kind and honest lady and wish to meet a man with alike qualities and goals.</p>
+                    <p><b>My Dream Man</b></p>
+                    <p>My man is life loving person with a good sense of humor. He is wise, noble, attentive and charming. I see my man as a leader, I have a respect for my man. I like when a man knows how to find approach to his lady.) My man is comunicative person and likes to talk to his woman much.) I hope we can have mutual hobbies and raise more things in common together.</p>
+                    <p><b>Hobbies</b></p>
+                    <p>Main hobbies dancing, I do this on a professional basis actually. I am a trainer also. I go to fitness 4 times a week, swimming 2 times a week. Other sports I like are bicycling and roller skating. In the summer I adore beach volleyball and can play the whole day. Ice-skating in the winter. I love to play guitar and do this often. I attend actor's school because I like to express emotions in a beautiful way.)) I think it is so romantic!) I love traveling and want to travel much in the future.</p>
                   </div>
-                  <div class="candidateProfile__aboutText"><strong>Interview</strong><br><strong>My three brightest features:</strong><span>Responsible, kind, faithfull</span><br><strong>The same from friends words:</strong><span>Humorous, reliable friend, kind</span><br><strong>Three features I admire in men:</strong><span>Sincerity, desire to court on his woman, wisdom</span><br><strong>What animal I compare myself with:</strong><span>White horse</span><br><strong>What animal I compare my Man with:</strong><span>Dark brown horse</span><br><strong>Am I listener or talker:</strong><span>50/50</span><br><strong>My attitude to humor:</strong><span>very important part of life</span><br><strong>Am I religious:</strong><span>I am Christian, I am a believer inside my soul</span><br><strong>Do I want kids in the future:</strong><span>Possibly, if my husband will want a child</span><br><strong>Do I smoke:</strong><span>No</span><br><strong>Do I drink alcohol:</strong><span>No</span><br><strong>Do I have other harmful habits or addictions:</strong><span>No</span></div>
-                  <div class="candidateProfile__aboutText"><strong>Feedback from Adam and Eve</strong>
+                  <div class="candidateProfile__aboutText">
+                    <p><b>Interview</b></p>
+                    <div><strong>My three most striking features:</strong><span>Responsible, kind, faithful</span></div>
+                    <div><strong>The same from friends words:</strong><span>Humorous, reliable friend, kind</span></div>
+                    <div><strong>Three features I admire in men:</strong><span>Sincerity, desire to court on his woman, wisdom</span></div>
+                    <div><strong>What animal I compare myself with:</strong><span>White horse</span></div>
+                    <div><strong>What animal I compare my Man with:</strong><span>Dark-brown horse</span></div>
+                    <div>
+                      <Am>I a listener or talker:</Am><span>50/50</span>
+                    </div>
+                    <div><strong>My attitude to humor:</strong><span>very important part of life</span></div>
+                    <div><strong>Am I religious:</strong><span>I am Christian, I am a believer inside my soul</span></div>
+                    <div><strong>Do I want kids in the future:</strong><span>It is possible, if my husband will want a child</span></div>
+                    <div><strong>Do I smoke:</strong><span>No</span></div>
+                    <div><strong>Do I drink alcohol:</strong><span>No</span></div>
+                    <div><strong>Do I have other harmful habits or addictions:</strong><span>No</span></div>
+                  </div>
+                  <div class="candidateProfile__aboutText">
+                    <p><b>Feedback from Adam and Eve</b></p>
                     <p>We know Yuliya at the agency already for a year. She is very positive girl from all sides. Yuliya comes from a good family and she is the only child there. Her parents have good relationships and the family has got a good income. They sometimes allow themselves to go abroad to rest with their child. The Parents are engaged in trade. Yuliya is studying IT and PR at the Polytechnic University in Odessa. At the same time, she is actively involved in sports and works as a choreographer.</p>
                     <p>The girl is able to communicate informatively, she is not superficial. Despite the fact that she is a young lady and does not have much experience in dealing with men, respect for a woman has great importance for her. She had couple of meetings with young people in the agency, but the relationship did not start due to the fault of gentlemen. Yuliya is very careful and respectful person, she knows how to set the boundaries between personal and public spheres. She definitely can organize her time and appreciates the time of other people.</p>
                     <p>In communication, she sometimes seems a little bit restrained, but this is because of shyness during the first minutes of conversation. For Yuliya’s mind, the appearance of a young man is not of paramount importance, but intelligence is really essential for her. Her well-being is also important, because she would like to live in an atmosphere where she doesn’t need to care a lot about her daily needs. As she is grown up in a  quiet wealthy family by Ukrainian standards, welfare will be of great importance to her. At the same time, a man can impress her with his personal qualities, but not his financial position. Julia will definitely consider only the man who she will love. We recommend Yuliya as an honest, responsible lady with serious attitude towards family relationships.</p>
@@ -163,7 +193,7 @@
       <div class="modal modalNotEnoughMoney" style="display: none;">
         <div class="modal__box"><span class="close"></span>
           <div class="modal__title">Please top up your balance to proceed</div>
-          <label>Account Balance:	$15.00</label>
+          <p><b>Account Balance:	$15.00</b></p>
           <form>
             <div class="modal__boxInside">
               <input class="field" type="text" placeholder="200" id="sum" name="sum">
@@ -192,9 +222,10 @@
         <div class="modal__box"><span class="close"></span>
           <div class="modal__title">SELECT OPTIONS</div>
           <form>
-            <div class="modal__boxInside"><span>Please choose the type of letter you want to send</span>
+            <div class="modal__boxInside">
+              <p>Please choose the type of letter you want to send</p>
               <label class="filter__label" for="">
-                <select class="field" id="" name="">
+                <select class="field" id="select-options" name="">
                   <option value="1"><span>1 letter + responce translated for lady *</span><span>10 USD</span></option>
                   <option value="2"><span>1 letter + responce for lady *</span><span>10 USD</span></option>
                 </select>
@@ -222,13 +253,13 @@
               <p>Your time zone</p>
               <p class="text-gray">All times will be displayed according to your time zone</p>
               <label class="filter__label" for="">
-                <select class="field" id="" name="">
+                <select class="field" id="select-city" name="">
                   <option value="1">Ukraine</option>
                   <option value="2">USA</option>
                 </select>
               </label>
               <label class="filter__label" for="">
-                <select class="field" id="" name="">
+                <select class="field" id="select-country" name="">
                   <option value="1">Kiev (GMT+3:00) [DST]</option>
                   <option value="2">New York (GMT+3:00) [DST]</option>
                 </select>
@@ -240,7 +271,7 @@
           </form>
         </div>
       </div>
-      <div class="modal modalArrangeVideoDateCalendar" style="display: none;">
+      <div class="modal modalArrangeVideoDateCalendar">
         <div class="modal__box"><span class="close"></span>
           <div class="modal__title">ARRANGE VIDEO DATE</div>
           <form>
@@ -248,10 +279,34 @@
               <p>Please select a convenient time</p>
               <div class="dateTimePicker">
                 <div class="datepicker"></div>
-                <div class="timepicker"></div>
+                <div class="timepicker">
+                  <div class="timepicker__title">Select time</div>
+                  <div class="timepicker__box">
+                    <input type="radio" id="9:00" name="timepicker">
+                    <label for="9:00">9:00</label>
+                    <input type="radio" id="9:30" name="timepicker">
+                    <label for="9:30">9:30</label>
+                    <input type="radio" id="10:00" name="timepicker">
+                    <label for="10:00">10:00</label>
+                    <input type="radio" id="10:30" name="timepicker">
+                    <label for="10:30">10:30</label>
+                    <input type="radio" id="11:00" name="timepicker">
+                    <label for="11:00">11:00</label>
+                    <input type="radio" id="11:30" name="timepicker">
+                    <label for="11:30">11:30</label>
+                    <input type="radio" id="12:00" name="timepicker">
+                    <label for="12:00">12:00</label>
+                    <input type="radio" id="12:30" name="timepicker">
+                    <label for="12:30">12:30</label>
+                    <input type="radio" id="13:00" name="timepicker">
+                    <label for="13:00">13:00</label>
+                    <input type="radio" id="13:30" name="timepicker">
+                    <label for="13:30">13:30</label>
+                  </div>
+                </div>
               </div>
               <div class="modal__btnGroup">
-                <button class="button">Send Mail</button><span class="totalCost">Video date cost: 150$</span>
+                <button class="button">Continue</button><span class="totalCost">Video date cost: 150$</span>
                 <div></div>
               </div>
             </div>
