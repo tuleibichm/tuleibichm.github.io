@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
   </head>
-  <body class="my-profile">
+  <body>
     <div class="wrapper">
       <header class="header"><a class="logo" href="/"></a>
         <div class="header__topLine">International Dating and Matchmaking agency</div>
@@ -53,30 +53,66 @@
               <div class="sidebar">
                 <div class="sidebar__list"><a class="sidebar__item sidebar__item-active iconServices" href="#">Services</a><a class="sidebar__item iconMyProfile" href="#">My profile</a><a class="sidebar__item iconViwedProfiles" href="#">Viewed profiles</a><a class="sidebar__item iconBalance" href="#">Balance & Payment history</a><a class="sidebar__item iconSpecialOffers" href="#">Special offers<span>1</span></a></div>
               </div>
-              <div class="profile">
-                <div class="tabs"><a class="tabs__item" href="#">Main info</a><a class="tabs__item tabs__item-active" href="#">Personal Details</a><a class="tabs__item" href="#">Ideal lady</a></div>
+              <div class="profile profileEditIdealLady">
+                <div class="tabs"><a class="tabs__item" href="#">Main info</a><a class="tabs__item" href="#">Personal Details</a><a class="tabs__item tabs__item-active" href="#">Ideal lady</a></div>
                 <div class="profile__content">
                   <div class="profile__DetailsList">
                     <div class="profile__DetailsItem">
                       <label class="profileKey">Her age:</label>
-                      <input class="field" type="text">
+                      <div class="flex">
+                        <div class="controll__group controll__group-fromTo"><span class="fromTo__label">From:</span>
+                          <select class="field" name="age">
+                            <option value="150">150</option>
+                            <option value="170">170</option>
+                          </select>
+                        </div>
+                        <div class="controll__group controll__group-fromTo"><span class="fromTo__label">To:</span>
+                          <select class="field" name="age">
+                            <option value="150">150</option>
+                            <option value="170">170</option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
                     <div class="profile__DetailsItem">
                       <label class="profileKey">Her height:</label>
-                      <input class="field" type="text">
+                      <div class="flex">
+                        <div class="controll__group controll__group-fromTo"><span class="fromTo__label">From:</span>
+                          <select class="field" name="age">
+                            <option value="150">150</option>
+                            <option value="170">170</option>
+                          </select>
+                        </div>
+                        <div class="controll__group controll__group-fromTo"><span class="fromTo__label">To:</span>
+                          <select class="field" name="age">
+                            <option value="150">150</option>
+                            <option value="170">170</option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
                     <div class="profile__DetailsItem">
                       <label class="profileKey">Her hair color:</label>
-                      <input class="field" type="text">
+                      <div class="controll__group">
+                        <select class="field" name="age">
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                        </select>
+                      </div>
                     </div>
                     <div class="profile__DetailsItem">
                       <label class="profileKey">Her eyes color:</label>
-                      <input class="field" type="text">
+                      <div class="controll__group">
+                        <select class="field" name="age">
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                        </select>
+                      </div>
                     </div>
                     <div class="profile__DetailsItem">
                       <label class="profileKey">Her children:</label>
                       <div class="controll__group">
-                        <select class="field" type="range" name="age">
+                        <select class="field" name="age">
                           <option value="Yes">Yes</option>
                           <option value="No">No</option>
                         </select>
@@ -84,22 +120,17 @@
                     </div>
                     <div class="profile__DetailsItem">
                       <label class="profileKey">Describe the lady’s personality that suit you best:</label>
-                      <div class="controll__group">
-                        <select class="field" type="range" name="age">
-                          <option value="Yes">Yes</option>
-                          <option value="No">No</option>
-                        </select>
-                      </div>
+                      <textarea class="fieldTextarea"></textarea>
                     </div>
                     <div class="profile__DetailsItem">
                       <label class="profileKey">Other important criteria for your match:</label>
-                      <input class="field" type="text">
+                      <textarea class="fieldTextarea"></textarea>
                     </div>
                     <div class="profile__DetailsItem">
                       <label class="profileKey"></label>
                       <div class="profile__buttonWrapper">
                         <button class="button">Save</button>
-                        <button class="button button-red">Cancel</button>
+                        <button class="button button-tuscany">Cancel</button>
                       </div>
                     </div>
                   </div>
@@ -222,13 +253,13 @@
               <p>Your time zone</p>
               <p class="text-gray">All times will be displayed according to your time zone</p>
               <label class="filter__label" for="">
-                <select class="field" id="select-city" name="">
+                <select class="field select-city" name="">
                   <option value="1">Ukraine</option>
                   <option value="2">USA</option>
                 </select>
               </label>
               <label class="filter__label" for="">
-                <select class="field" id="select-country" name="">
+                <select class="field select-country" name="">
                   <option value="1">Kiev (GMT+3:00) [DST]</option>
                   <option value="2">New York (GMT+3:00) [DST]</option>
                 </select>
@@ -247,7 +278,8 @@
             <div class="modal__boxInside">
               <p>Please select a convenient time</p>
               <div class="dateTimePicker">
-                <div class="datepicker"></div>
+                <input type="hidden" data-id="arrangeVideoDateCalendar">
+                <div class="datepicker" id="arrangeVideoDateCalendar"></div>
                 <div class="timepicker">
                   <div class="timepicker__title">Select time</div>
                   <div class="timepicker__box">
@@ -276,6 +308,25 @@
               </div>
               <div class="modal__btnGroup">
                 <button class="button">Continue</button><span class="totalCost">Video date cost: 150$</span>
+                <div></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modalArrageLiveDate" style="display: none;">
+        <div class="modal__box"><span class="close"></span>
+          <div class="modal__title">Arrage live date</div>
+          <form>
+            <div class="modal__boxInside">
+              <input class="field" type="text" placeholder="Your phone number">
+              <p>Please select a convenient time</p>
+              <div class="dateTimePicker">
+                <input type="hidden" data-id="arrageLiveDate">
+                <div class="datepicker" id="arrageLiveDate"></div>
+              </div>
+              <div class="modal__btnGroup">
+                <button class="button">Continue</button><span class="totalCost">Сost: 150$</span>
                 <div></div>
               </div>
             </div>
@@ -336,21 +387,20 @@
                   <div class="gifts__cost"><b>7$</b></div>
                 </div>
                 <div class="checkbox__label">
-                  <label for="addMessage">Add message to your gift</label>
-                  <input class="checkbox" type="checkbox" id="addMessage" placeholder="Subject">
+                  <label for="additionalOptionsAddMessage">Add message to your gift</label>
+                  <input class="checkbox" type="checkbox" id="additionalOptionsAddMessage" placeholder="Subject">
                   <textarea class="fieldTextarea"></textarea>
                 </div>
                 <div class="checkbox__label">
-                  <label for="selectDay">Sellect specific day when we delver your present to lady</label>
-                  <input class="checkbox" type="checkbox" id="selectDay" placeholder="Subject">
+                  <label for="additionalOptionsSelectDay">Sellect specific day when we delver your present to lady</label>
+                  <input class="checkbox" type="checkbox" id="additionalOptionsSelectDay" placeholder="Subject">
                   <div class="dateTimePicker">
                     <div class="datepicker"></div>
-                    <div class="timepicker"></div>
                   </div>
                 </div>
                 <div class="checkbox__label">
-                  <label for="addVideo">Video of lady at delivery  -  29 USD</label>
-                  <input class="checkbox" type="checkbox" id="addVideo" placeholder="Subject">
+                  <label for="additionalOptionsAddVideo">Video of lady at delivery  -  29 USD</label>
+                  <input class="checkbox" type="checkbox" id="additionalOptionsAddVideo" placeholder="Subject">
                 </div>
               </div>
               <div class="modal__btnGroup modal__btnGroup-absolute">
@@ -393,19 +443,62 @@
               <p>Your time zone</p>
               <p class="text-gray">All times will be displayed according to your time zone</p>
               <label class="filter__label" for="">
-                <select class="field" id="" name="">
+                <select class="field select-city" name="">
                   <option value="1">Ukraine</option>
                   <option value="2">USA</option>
                 </select>
               </label>
               <label class="filter__label" for="">
-                <select class="field" id="" name="">
+                <select class="field select-country" name="">
                   <option value="1">Kiev (GMT+3:00) [DST]</option>
                   <option value="2">New York (GMT+3:00) [DST]</option>
                 </select>
               </label>
               <div class="modal__btnGroup">
                 <button class="button">Continue</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modalBookaCallCalendar" style="display: none;">
+        <div class="modal__box"><span class="close"></span>
+          <div class="modal__title">Book a Call</div>
+          <form>
+            <div class="modal__boxInside">
+              <p>Please select a convenient time</p>
+              <div class="dateTimePicker">
+                <input type="hidden" data-id="arrangeVideoDateCalendar">
+                <div class="datepicker" id="modalBookaCallCalendar"></div>
+                <div class="timepicker">
+                  <div class="timepicker__title">Select time</div>
+                  <div class="timepicker__box">
+                    <input type="radio" id="9:00" name="timepicker">
+                    <label for="9:00">9:00</label>
+                    <input type="radio" id="9:30" name="timepicker">
+                    <label for="9:30">9:30</label>
+                    <input type="radio" id="10:00" name="timepicker">
+                    <label for="10:00">10:00</label>
+                    <input type="radio" id="10:30" name="timepicker">
+                    <label for="10:30">10:30</label>
+                    <input type="radio" id="11:00" name="timepicker">
+                    <label for="11:00">11:00</label>
+                    <input type="radio" id="11:30" name="timepicker">
+                    <label for="11:30">11:30</label>
+                    <input type="radio" id="12:00" name="timepicker">
+                    <label for="12:00">12:00</label>
+                    <input type="radio" id="12:30" name="timepicker">
+                    <label for="12:30">12:30</label>
+                    <input type="radio" id="13:00" name="timepicker">
+                    <label for="13:00">13:00</label>
+                    <input type="radio" id="13:30" name="timepicker">
+                    <label for="13:30">13:30</label>
+                  </div>
+                </div>
+              </div>
+              <div class="modal__btnGroup">
+                <button class="button">Continue</button><span class="totalCost">Video date cost: 150$</span>
+                <div></div>
               </div>
             </div>
           </form>
