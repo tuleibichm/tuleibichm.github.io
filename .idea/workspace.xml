@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ddcd87e-1784-4b85-8f22-1778d1dfd4a5" name="Default Changelist" comment="build: 08.08.19">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tuleibichm.github.io.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9ddcd87e-1784-4b85-8f22-1778d1dfd4a5" name="Default Changelist" comment="build: 13.08.19">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/static/js/vendor/slick.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
+              <caret column="63" selection-start-column="63" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -62,6 +58,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -91,7 +88,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -139,6 +135,10 @@
       <workItem from="1564689466199" duration="246000" />
       <workItem from="1564939503214" duration="750000" />
       <workItem from="1565291669741" duration="179000" />
+      <workItem from="1565376356207" duration="891000" />
+      <workItem from="1565624481741" duration="142000" />
+      <workItem from="1565727965742" duration="170000" />
+      <workItem from="1565801860278" duration="486000" />
     </task>
     <task id="LOCAL-00001" summary="18/7/19">
       <created>1563465907537</created>
@@ -252,16 +252,37 @@
       <option name="project" value="LOCAL" />
       <updated>1565291776589</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="build: 09.08.19">
+      <created>1565376542233</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1565376542233</updated>
+    </task>
+    <task id="LOCAL-00018" summary="build: 09.08.19/2">
+      <created>1565379667401</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1565379667401</updated>
+    </task>
+    <task id="LOCAL-00019" summary="build: 13.08.19">
+      <created>1565728032698</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1565728032698</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6777000" />
+    <option name="totallyTimeSpent" value="8466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1602" height="873" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2792793" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25482625" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -273,7 +294,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.23302263" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.23035952" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -308,7 +329,10 @@
     <MESSAGE value="feat: add text pages" />
     <MESSAGE value="feat: 03.08.19" />
     <MESSAGE value="build: 08.08.19" />
-    <option name="LAST_COMMIT_MESSAGE" value="build: 08.08.19" />
+    <MESSAGE value="build: 09.08.19" />
+    <MESSAGE value="build: 09.08.19/2" />
+    <MESSAGE value="build: 13.08.19" />
+    <option name="LAST_COMMIT_MESSAGE" value="build: 13.08.19" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/js/libs.min.js" />
@@ -342,7 +366,7 @@
     <entry file="file://$PROJECT_DIR$/static/js/vendor/slick.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
+          <caret column="63" selection-start-column="63" selection-end-column="63" />
         </state>
       </provider>
     </entry>
