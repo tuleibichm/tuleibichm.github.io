@@ -16,7 +16,7 @@
             <div class="openMenu"><span></span><span></span><span></span></div>
             <nav>
               <div class="close close-white closeMenu"></div>
-              <div class="navigation"><a class="navigation__item" href="#">Contact us</a><a class="navigation__item" href="ladiesList.html">Ladies</a><a class="navigation__item" href="#">Tours</a>
+              <div class="navigation"><a class="navigation__item navigation__item-active" href="#">Contact us</a><a class="navigation__item" href="ladiesList.html">Ladies</a><a class="navigation__item" href="#">Tours</a>
                 <div class="navigation__item dropdown">Services<span></span>
                   <div class="dropdown__list"><a class="dropdown__item">Prices</a><a class="dropdown__item">Introduction</a><a class="dropdown__item">Matchmaking</a><a class="dropdown__item">Romance tours</a><a class="dropdown__item">Video date</a><a class="dropdown__item">Mail forwarding</a><a class="dropdown__item">Flowers and Presents</a><a class="dropdown__item">Pre-tour membership</a><a class="dropdown__item">Translation</a><a class="dropdown__item">Dating coaching</a><a class="dropdown__item">Special request</a></div>
                 </div><a class="navigation__item" href="#">FAQ</a><a class="navigation__item" href="#">About us</a>
@@ -51,7 +51,7 @@
           <div class="container">
             <div class="myProfile__box">
               <div class="sidebar">
-                <div class="sidebar__list"><a class="sidebar__item sidebar__item-active iconServices" href="#">Services</a><a class="sidebar__item iconMyProfile" href="#">My profile</a><a class="sidebar__item iconViwedProfiles" href="#">Viewed profiles</a><a class="sidebar__item iconBalance" href="#">Balance & Payment history</a><a class="sidebar__item iconSpecialOffers" href="#">Special offers<span>1</span></a></div>
+                <div class="sidebar__list"><a class="sidebar__item iconMyProfile sidebar__item-active" href="#">My profile</a><a class="sidebar__item iconServices" href="#">Services</a><a class="sidebar__item iconViwedProfiles" href="#">Viewed profiles</a><a class="sidebar__item iconBalance" href="#">Balance & Payment history</a><a class="sidebar__item iconSpecialOffers" href="#">Special offers<span>1</span></a></div>
               </div>
               <div class="profile">
                 <div class="tabs"><a class="tabs__item" href="#">Main info</a><a class="tabs__item tabs__item-active" href="#">Personal Details</a><a class="tabs__item" href="#">Ideal lady</a></div>
@@ -106,7 +106,13 @@
                     </div>
                     <div class="profile__DetailsItem">
                       <label class="profileKey">What is your native language?</label>
-                      <input class="field" type="text">
+                      <div class="controll__group">
+                        <select class="field" type="range" name="age">
+                          <option value="En">En</option>
+                          <option value="Ru">Ru</option>
+                          <option value="Ua">Ua</option>
+                        </select>
+                      </div>
                     </div>
                     <div class="profile__DetailsItem">
                       <label class="profileKey">What foreign languages do you speak?</label>
