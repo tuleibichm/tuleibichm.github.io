@@ -154,27 +154,30 @@
         <section class="videoTestimonials">
           <div class="container">
             <div class="section__title">Testimonials</div>
-            <div class="videoTestimonials__list slider" id="testimonialsSlider">
-              <div class="videoTestimonial__item">
-                <div class="video paused">
-                  <div class="video__view">
-                    <video>
-                      <source src="/static/video/big_buck_bunny.mp4" type="video/mp4">
-                    </video>
-                    <div class="video__controlls"></div>
-                  </div><span class="video__title">Sam, 42 y.o. from US</span>
+            <div class="swiper-container" id="testimonialsSwiper">
+              <div class="videoTestimonials__list swiper-wrapper">
+                <div class="videoTestimonial__item swiper-slide">
+                  <div class="video paused">
+                    <div class="video__view">
+                      <video>
+                        <source src="/static/video/big_buck_bunny.mp4" type="video/mp4">
+                      </video>
+                      <div class="video__controlls"></div>
+                    </div><span class="video__title">Sam, 42 y.o. from US</span>
+                  </div>
+                </div>
+                <div class="videoTestimonial__item swiper-slide">
+                  <div class="video paused">
+                    <div class="video__view">
+                      <video>
+                        <source>
+                      </video>
+                      <div class="video__controlls"></div>
+                    </div><span class="video__title">Sam, 42 y.o. from US</span>
+                  </div>
                 </div>
               </div>
-              <div class="videoTestimonial__item">
-                <div class="video paused">
-                  <div class="video__view">
-                    <video>
-                      <source>
-                    </video>
-                    <div class="video__controlls"></div>
-                  </div><span class="video__title">Sam, 42 y.o. from US</span>
-                </div>
-              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </section>
